@@ -171,7 +171,7 @@ footer div a{
      margin: 5px;
 }
 /*--------devives----------------------------------*/
-/* 
+
 @media screen and (max-width:320px){
     header{ width:300px;}
     .heroit img{ width: 250px;}
@@ -187,6 +187,11 @@ footer div a{
     #exp{width:100%;}
     #sec{margin-left: 5px;}
     #contact{ font-size: 18px;}
-    .flex-container {display: block; font-weight: 0%;}
+    .fot{width: 300px; }
+    /* .flex-container {display: block; font-weight: 0%;} */
     .flex-container div{margin-left: 2px;}
-} */
+    /* h3,ul{
+        font-size: 12px;
+        width: 300px;
+    } */
+}

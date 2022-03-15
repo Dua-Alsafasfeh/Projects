@@ -97,7 +97,7 @@ section{
 }
 .font3{
     font-family: 'Roboto', sans-serif ;
-    font-size: larger;
+    font-size:50px;
     color: #11698E;
 }
 .font4{
@@ -109,11 +109,12 @@ section{
 #edu{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .square{
     display:inline-block;
     border: 3px solid #19456B;
-    width: 420px;
+    width: 30%;
     height: 200px;
     margin: 5px;
     background-color: #F8F1F1;
@@ -181,8 +182,13 @@ footer div a{
      margin: 5px;
 }
 /*--------devives----------------------------------*/
+@media screen and (max-width:144px){
+    #edu{width: 100%;}
+    .square{width: 30%; font-size: 400px; 
+    }
+}
 /*-----------2560px-----------*/
-@media screen and(min-width:1441px)and(max-width:2560px)
+/* @media screen and(min-width:1441px)
 {   .nav{ height: 100px;}
     .nav a{font-size: xx-large; padding: 20px;}
     .square{width: 800px; height: 250px; font-size: xx-large;}
@@ -193,20 +199,30 @@ footer div a{
     .btn{width: 30%;}
     button a{ font-size: xx-large;}
     #exp{font-size: xx-large; width:75%;}
-} 
-
-
+    .container{max-width: 1500px;}
+    .row{font-size: xx-large;}
+    .h{font-size: 50px;}
+    .h:after{ width: 40%; }
+    .h:before{ width: 40%; }
+    #edu{margin-left: 50px;} 
+}  */
+/*------------------1024px-----------*/
+/* @media screen and (min-width:769px) and (max-width:1024px){
+    .square{height: 250px;}
+    #exp{font-size: xx-large; width:75%;}
+} */
 
 /*------------320px--------*/
-@media screen and (max-width:320px){
+/* @media screen and (max-width:320px)
+{
     .nav{width:300px;}
     header{ width:300px;}
     .heroit img{ width: 250px;}
     #edu{display:block;}
     .square{width:250px; height: 250px; margin-left: 20px;}
     .h:hover{color: #e93675;}
-    .h:after{ width: 10%; }
-    .h:before{ width: 10%; }
+    .h:after{ width: 10%; display: none; }
+    .h:before{ width: 10%; display: none;}
     img{width:25px;}
     .project{ width:300px;}
     .project img{ width:300px; height: 240px;}
@@ -215,10 +231,10 @@ footer div a{
     #sec{margin-left: 5px;}
     #contact{ font-size: 18px;}
     .fot{width: 300px; }
-    /* .flex-container {display: block; font-weight: 0%;} */
+    .flex-container {display: block; font-weight: 0%;}
     .flex-container div{margin-left: 2px;}
-    /* h3,ul{
+     h3,ul{
         font-size: 12px;
         width: 300px;
-    } */
-}
+    } 
+} */

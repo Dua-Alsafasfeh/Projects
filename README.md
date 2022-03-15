@@ -1,4 +1,5 @@
-# Projects### Hi there 👋, My Name is Dua Ibrahim Alsafasfeh
+# Projects
+### Hi there 👋, My Name is Dua Ibrahim Alsafasfeh
 #### My Portfolio
 This project is my first project in Orange Coding Academy.
 It is *My Portfolio*. 

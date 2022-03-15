@@ -97,7 +97,7 @@ section{
 }
 .font3{
     font-family: 'Roboto', sans-serif ;
-    font-size:50px;
+    font-size: larger;
     color: #11698E;
 }
 .font4{
@@ -109,12 +109,12 @@ section{
 #edu{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    
 }
 .square{
     display:inline-block;
     border: 3px solid #19456B;
-    width: 30%;
+    width: 100%;
     height: 200px;
     margin: 5px;
     background-color: #F8F1F1;
@@ -182,13 +182,8 @@ footer div a{
      margin: 5px;
 }
 /*--------devives----------------------------------*/
-@media screen and (max-width:144px){
-    #edu{width: 100%;}
-    .square{width: 30%; font-size: 400px; 
-    }
-}
 /*-----------2560px-----------*/
-/* @media screen and(min-width:1441px)
+@media screen and(min-width:1441px)
 {   .nav{ height: 100px;}
     .nav a{font-size: xx-large; padding: 20px;}
     .square{width: 800px; height: 250px; font-size: xx-large;}
@@ -205,7 +200,7 @@ footer div a{
     .h:after{ width: 40%; }
     .h:before{ width: 40%; }
     #edu{margin-left: 50px;} 
-}  */
+} 
 /*------------------1024px-----------*/
 /* @media screen and (min-width:769px) and (max-width:1024px){
     .square{height: 250px;}

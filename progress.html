@@ -33,7 +33,7 @@
           font-weight: bold;
           font-family: 'Times New Roman', Times, serif;
         }
-       label {
+        label {
            color: #085F63;
            font-size: large;
            font-style: italic;
@@ -42,6 +42,19 @@
         }progress{
             width: 100%;
             font-size: x-large;
+        }
+        .sub input{
+            color:#FAD3CF;
+            text-align: center;
+            width: 35%;
+            background-color: #2470A0;
+            margin-bottom:5px;
+        }
+        .track{
+             margin-left: 10px;
+        }
+        #job , #company , #note {
+            width:35%
         }
         
     </style>
@@ -58,7 +71,6 @@
             </nav>
     </header>
     <main>
-        <section>
             <div class="tech">               
                 <h4>Technical Skills</h4>
                 <label for="h">HTML</label><br>
@@ -66,23 +78,48 @@
                 <label for="g">Github</label><br>
                 <progress id="g" value="95" max="100"> 95% </progress><br>
                 <label for="c">CSS</label><br>
-                <progress id="c" value="95" max="100"> 95% </progress><br>
+                <progress id="c" value="70" max="100"> 70% </progress><br>
             </div>
-        </section>
-        <br>
-        <section>
             <div class="soft">               
                 <h4 id="">Soft Skills</h4>
                 <label for="time">Time Management</label><br>
-                <progress id="time" value="95" max="100"> 95% </progress><br>
+                <progress id="time" value="70" max="100"> 70% </progress><br>
                 <label for="team">Team Work</label><br>
-                <progress id="team" value="95" max="100"> 95% </progress><br>
+                <progress id="team" value="90" max="100"> 90% </progress><br>
                 <label for="p">Presentation Skill</label><br>
-                <progress id="p" value="95" max="100"> 95% </progress><br>
+                <progress id="p" value="85" max="100"> 85% </progress><br>
                 <label for="search">Searching Skill</label><br>
-                <progress id="search" value="95" max="100"> 95% </progress><br>
+                <progress id="search" value="85" max="100"> 85% </progress><br>
             </div>
-        </section>
+            <br>
+         <div class="track">
+             <h4>Job Tracking Form</h4>
+             <hr>
+             <form action="">
+                <label for="job">Job title:</label><br>
+                <input type="text" id="job" name="job" placeholder="Job title"><br>
+                <label for="company">Company name:</label><br>
+                <input type="text" id="company" name="company" placeholder="Company name"><br><br>
+
+                <label for="city">city:</label><br>
+                <input type="radio" id="amman" name="city1" value="amman">
+                <label for="amman">Amman</label>
+                <input type="radio" id="Aqaba" name="city2" value="aqaba" checked="checked">
+                <label for="amman">Aqaba</label>
+                <input type="radio" id="other" name="city" value="other">
+                <label for="other">Other</label><br>
+                <label for="Date">Job Interview Date</label>
+                <input type="date">
+                <h4>Note</h4>
+                <input type="text" id="note" placeholder="Job Interview Note">
+                <br><br>
+                <div class="sub">
+                <input type="submit" value="Submit">
+                <br>
+                <input type="reset" vlue="reset">
+            </div>
+             </form>
+         </div>   
     </main>
 </body>
 </html>

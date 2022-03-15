@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrab/css/bootstrap.css">
+    <link rel="stylesheet" href="first_project/style.css">
+    <title>Document</title>
+    <style>
+        header{
+            height: 50px;
+            background-color: aquamarine; 
+        }
+        body{
+            background-color: #FAD3CF;
+        }
+        .tech,.soft{
+            background-color: #F5E1DA;
+            padding: 7px;
+            margin: 3px;
+            width:35%;
+            height: auto;
+            border: 1px solid;
+            border-style: none;
+        }
+        hr{ width: 100%;
+            height: 15px;
+            border-radius: 10px;
+        }
+        h4{
+          color: #085F63;
+          font-weight: bold;
+          font-family: 'Times New Roman', Times, serif;
+        }
+       label {
+           color: #085F63;
+           font-size: large;
+           font-style: italic;
+           font-family: 'Times New Roman', Times, serif; 
+        
+        }progress{
+            width: 100%;
+            font-size: x-large;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+            <!--Navbar ------------------>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#resent project">Recent Projects</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#follow me">Contact</a>
+            </nav>
+    </header>
+    <main>
+        <section>
+            <div class="tech">               
+                <h4>Technical Skills</h4>
+                <label for="h">HTML</label><br>
+                <progress id="h" value="95" max="100"> 95% </progress><br>
+                <label for="g">Github</label><br>
+                <progress id="g" value="95" max="100"> 95% </progress><br>
+                <label for="c">CSS</label><br>
+                <progress id="c" value="95" max="100"> 95% </progress><br>
+            </div>
+        </section>
+        <br>
+        <section>
+            <div class="soft">               
+                <h4 id="">Soft Skills</h4>
+                <label for="time">Time Management</label><br>
+                <progress id="time" value="95" max="100"> 95% </progress><br>
+                <label for="team">Team Work</label><br>
+                <progress id="team" value="95" max="100"> 95% </progress><br>
+                <label for="p">Presentation Skill</label><br>
+                <progress id="p" value="95" max="100"> 95% </progress><br>
+                <label for="search">Searching Skill</label><br>
+                <progress id="search" value="95" max="100"> 95% </progress><br>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,125 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Bootstrab/css/bootstrap.css">
     <link rel="stylesheet" href="first_project/style.css">
-    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond&family=IBM+Plex+Mono:wght@500&family=Pacifico&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/71fa6fa637.js" crossorigin="anonymous"></script>
+    <title>Progress</title>
     <style>
-        header{
-            height: 50px;
-            background-color: aquamarine; 
+        h4 {
+            color: #085F63;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
         }
-        body{
-            background-color: #FAD3CF;
-        }
-        .tech,.soft{
-            background-color: #F5E1DA;
-            padding: 7px;
-            margin: 3px;
-            width:35%;
-            height: auto;
-            border: 1px solid;
-            border-style: none;
-        }
-        hr{ width: 100%;
-            height: 15px;
-            border-radius: 10px;
-        }
-        h4{
-          color: #085F63;
-          font-weight: bold;
-          font-family: 'Times New Roman', Times, serif;
-        }
+
+        h6,
         label {
-           color: #085F63;
-           font-size: large;
-           font-style: italic;
-           font-family: 'Times New Roman', Times, serif; 
-        
-        }progress{
-            width: 100%;
-            font-size: x-large;
+            color: #085F63;
+            font-size: large;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
         }
-        .sub input{
-            color:#FAD3CF;
+
+        .sub input {
+            color: #FAD3CF;
             text-align: center;
             width: 35%;
             background-color: #2470A0;
-            margin-bottom:5px;
+            margin-bottom: 1em;
         }
-        .track{
-             margin-left: 10px;
+
+        .track {
+            text-align: center;
         }
-        #job , #company , #note {
-            width:35%
+
+        #job,
+        #company,
+        #note {
+            width: 35%
         }
-        
     </style>
 </head>
+
 <body>
     <header>
-            <!--Navbar ------------------>
+        <!----------------Navbar ------------------>
         <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="index.html#education">Education</a>
-            <a href="index.html#resent project">Recent Projects</a>
-            <a href="index.html#experience">Experience</a>
-            <a href="index.html#follow me">Contact</a>
-            </nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="#follow me">Contact</a>
+        </nav>
     </header>
     <main>
-            <div class="tech">               
+        <div class="container">
+            <div class="tech">
                 <h4>Technical Skills</h4>
-                <label for="h">HTML</label><br>
-                <progress id="h" value="95" max="100"> 95% </progress><br>
-                <label for="g">Github</label><br>
-                <progress id="g" value="95" max="100"> 95% </progress><br>
-                <label for="c">CSS</label><br>
-                <progress id="c" value="70" max="100"> 70% </progress><br>
+                <h6>HTML</h6>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+                <h6>CSS</h6>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="60"
+                        aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+                <h6>Github</h6>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+                <h6>Javascript</h6>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <br>
             </div>
-            <div class="soft">               
-                <h4 id="">Soft Skills</h4>
-                <label for="time">Time Management</label><br>
-                <progress id="time" value="70" max="100"> 70% </progress><br>
-                <label for="team">Team Work</label><br>
-                <progress id="team" value="90" max="100"> 90% </progress><br>
-                <label for="p">Presentation Skill</label><br>
-                <progress id="p" value="85" max="100"> 85% </progress><br>
-                <label for="search">Searching Skill</label><br>
-                <progress id="search" value="85" max="100"> 85% </progress><br>
+            <!------------------soft skills-------->
+            <div class="soft">
+                <h4>Soft Skills</h4>
+                <h6>Time Management</h6>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+                <h6>Team Work</h6>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70%"
+                        aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+                <h6>Presentation Skill</h6>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">50%</div>
+                </div>
+                <h6>Searching Skill</h6>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
             </div>
             <br>
-         <div class="track">
-             <h4>Job Tracking Form</h4>
-             <hr>
-             <form action="">
-                <label for="job">Job title:</label><br>
-                <input type="text" id="job" name="job" placeholder="Job title"><br>
-                <label for="company">Company name:</label><br>
-                <input type="text" id="company" name="company" placeholder="Company name"><br><br>
-
-                <label for="city">city:</label><br>
-                <input type="radio" id="amman" name="city1" value="amman">
-                <label for="amman">Amman</label>
-                <input type="radio" id="Aqaba" name="city2" value="aqaba" checked="checked">
-                <label for="amman">Aqaba</label>
-                <input type="radio" id="other" name="city" value="other">
-                <label for="other">Other</label><br>
-                <label for="Date">Job Interview Date</label>
-                <input type="date">
-                <h4>Note</h4>
-                <input type="text" id="note" placeholder="Job Interview Note">
-                <br><br>
-                <div class="sub">
-                <input type="submit" value="Submit">
-                <br>
-                <input type="reset" vlue="reset">
+            <!----------------------job tracking form---------->
+            <div class="track">
+                <h4>Job Tracking Form</h4>
+                <hr>
+                <form action="">
+                    <label for="job"><strong>Job title:</strong></label>
+                    <input type="text" id="job" name="job" placeholder="Job title"><br><br>
+                    <label for="company"><strong>Company name:</strong></label>
+                    <input type="text" id="company" name="company" placeholder="Company name"><br><br>
+                    <label for="city"><strong>city:</strong></label>
+                    <input type="radio" id="amman" name="city1" value="amman">
+                    <label for="amman">Amman</label>
+                    <input type="radio" id="Aqaba" name="city2" value="aqaba" checked="checked">
+                    <label for="amman">Aqaba</label>
+                    <input type="radio" id="other" name="city" value="other">
+                    <label for="other">Other</label><br><br>
+                    <label for="Date"><strong>Job Interview Date </strong></label>
+                    <input type="date"><br><br>
+                    <h4>Note <span><input type="text" id="note" placeholder="Job Interview Note"></span></h4>
+                    <br>
+                    <div class="sub">
+                        <input type="submit" value="Submit">
+                        <br>
+                        <input type="reset" vlue="reset">
+                    </div>
+                </form>
             </div>
-             </form>
-         </div>   
+        </div>
     </main>
+    <!------------------footer------------>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h3 class="font5">Contact</h3>
+                    <p><span class="fa-solid fa-phone" style="color: black;"></span> 0778089196</p>
+                    <p><span class="fa-solid fa-envelope" style="color: black;"></span> Dua.alsafasfeh@gmail.com</p>
+                    <p><span class="fa-solid fa-location-dot" style="color:rgb(233, 129, 146);"></span> Aqaba-Jordan</p>
+                </div>
+                <div class="col-sm">
+                    <h3 class="font5" id="follow me">Follow Me</h3>
+                    <a href="https://github.com/Dua-Alsafasfeh" id="follow" class="fa-brands fa-github"
+                        style="color: black;" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/du-a-alsafasfeh-70a9a7147" id="follow"
+                        class="fa-brands fa-linkedin" style="color: rgb(32, 102, 158);" target="_blank"></a>
+                </div>
+                <div class="col-sm">
+                    <p style="padding-top: 20px;"><i>"There are many little ways to enlarge your world. Love of books is
+                            the best of all."</i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
